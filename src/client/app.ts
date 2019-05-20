@@ -1,3 +1,4 @@
+/* eslint-disable */
 import AppController from './app.controller';
 
 (function(): void {

@@ -1,0 +1,49 @@
+{
+    "env": {
+      "commonjs": true,
+      "es6": true,
+      "node": true
+    },
+    "extends": "airbnb-base",
+    "globals": {
+      "Atomics": "readonly",
+      "SharedArrayBuffer": "readonly"
+    },
+    "parser": "@typescript-eslint/parser",
+    "parserOptions":  {
+      "ecmaVersion":  2018,
+      "sourceType":  "module"
+    },
+    "plugins": [
+      "eslint-plugin-import",
+      "@typescript-eslint"
+    ],
+    "rules": {
+      "@typescript-eslint/no-unused-vars": "warn",
+      "arrow-body-style": ["error", "as-needed"],
+      "arrow-parens": ["error", "always"],
+      "import/no-extraneous-dependencies": ["error", { "devDependencies": ["**/*.spec.ts"] }],
+      "import/prefer-default-export": "off",
+      "indent": ["warn", 4],
+      "lines-between-class-members": "off",
+      "max-len": ["error", { "code": 120, "ignoreTemplateLiterals": true, "ignoreComments": true }],
+      "no-console": "off",
+      "no-else-return": ["error", { "allowElseIf": true }],
+      "no-param-reassign": ["error", { "ignorePropertyModificationsFor": ["reduce"] }],
+      "no-underscore-dangle": "off",
+      "no-unused-vars": "off"
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "paths": ["src"],
+          "extensions": [
+              ".js",
+              ".jsx",
+              ".ts",
+              ".tsx"
+          ]
+        }
+      }
+    }
+  }

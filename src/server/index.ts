@@ -5,7 +5,7 @@ import * as bodyParser from 'body-parser';
 import * as path from 'path';
 import * as logger from 'morgan';
 import * as dotenv from 'dotenv';
-import {RoutePathEnum} from './config/route-path.enum';
+import { RoutePathEnum } from './config/route-path.enum';
 
 dotenv.config({ path: '.env' });
 

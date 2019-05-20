@@ -1,5 +1,12 @@
-import { JSDOM } from 'jsdom';
+/* eslint-disable max-len */
+import {
+    describe,
+    beforeEach,
+    afterEach,
+    it,
+} from 'mocha';
 import { expect } from 'chai';
+import { JSDOM } from 'jsdom';
 import AppController from '../app.controller';
 
 describe('AppController', () => {
